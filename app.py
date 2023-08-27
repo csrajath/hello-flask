@@ -8,6 +8,7 @@ def health_check():
 
 @app.route('/<random_string>')
 def returnBackwardsString(random_string):
+    print('hi')
     """Reverse and return the provided URI"""
     return "".join(reversed(random_string))
 
